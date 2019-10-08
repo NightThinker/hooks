@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Input from './components/UI/Input/Input';
+import Button from './components/UI/Button/Button';
 
 function App() {
 	const inputRef = useRef();
@@ -11,8 +12,8 @@ function App() {
 	};
 	return (
 		<div className='App'>
-			<input ref={inputRef} />
-			<button onClick={onSubmitHandler}>add</button>
+			<Input nameRef={inputRef} />
+			<Button onClick={onSubmitHandler}>add</Button>
 		</div>
 	);
 }
